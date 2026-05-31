@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: document-extractor
+gemini:
+  api:
+    key: ${GEMINI_API_KEY:your-key-here}
+    url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent
