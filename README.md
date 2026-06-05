@@ -30,6 +30,14 @@ structured prompt and returns consistent JSON every time.
 4. POST http://localhost:8080/api/extract/excel
    with form-data: file=your-excel.xlsx
 
+## Run with Docker
+1. Copy .env.example to .env
+2. Add your Gemini API key to .env
+3. Build and run:
+   mvn clean package -DskipTests
+   docker-compose up
+4. Visit http://localhost:8080/swagger-ui/index.html   
+
 ## Example
 Input:  Any Excel with data
 Output: Structured JSON extracted by AI
